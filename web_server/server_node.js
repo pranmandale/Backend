@@ -3,7 +3,7 @@ const http = require('http');
 const hostname = '127.0.0.1'
 const port = 3000
 
-const server = http.createServer((req,res) => {
+const server = http.createServer((req, res) => {
    if (req.url === '/') {
      res.statusCode = 200
      res.setHeader('Content-Type','text/plain')
@@ -17,7 +17,7 @@ const server = http.createServer((req,res) => {
   else {
     res.statusCode = 404
      res.setHeader('Content-Type','text/plain')
-     res.end("404 not found")
+     res.end("404 page not found")
   }
 })
 
